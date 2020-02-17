@@ -1,0 +1,30 @@
+{{#partial "content"}}
+
+    <h2 style="color: white;">The List of Rangers</h2>
+    <div class="rangers">
+
+        {{#if rangers}}
+
+            {{#each rangers}}
+                <div id="ranger" class="col-md-4">
+                    <div class="ranger-main-details">
+                        <h3>{{rangerName}}</h3>
+                        <hr>
+                        <h4>BadgeNumber: {{badgeNumber}}</h4>
+                        <h4>Email Contact: {{email}}</h4>
+                    </div>
+                    <div class="ranger-more-details">
+                        <h4 style="color: #DEC3AF">Ranger's Further Details</h4>
+                        <p><a href="/ranger/sightings/{{id}}">Record of all General Sightings</a></p>
+                        <p><a href="/ranger/animals/{{id}}">List of Animals</a></p>
+                    </div>
+                </div>
+
+            {{/each}}
+        {{/if}}
+    </div>
+
+{{/partial}}
+
+
+{{>layout.hbs}}

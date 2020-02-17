@@ -1,0 +1,63 @@
+{{#partial "content"}}
+    <div class="container" id="form">
+        <h3 style="color: white;">Enter your Specific Non-Endangered Sightings Here</h3>
+        <form action="/non_endangered/new" method="post">
+            <div class="form-row">
+                <div class="col-md-8 mb-3">
+                    <label for="validationServer01">Enter Animal Name</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer03" name="animalName" placeholder="Familiaris" required>
+
+                </div><br>
+
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-8 mb-3">
+                    <label for="validationServer03">Animal Age</label>
+                    <select class="form-control mdb-select md-form"  name="animalAge" id="" required>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="adult">Adult</option>
+                        <option value="young">Young</option>
+                        <option value="newborn">New-Born</option>
+                    </select>
+                </div><br>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-8 mb-3">
+                    <label for="validationServer01">Animal Health</label>
+                    <select class="form-control mdb-select md-form"  name="animalHealth" id="" required>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="healthy">Healthy</option>
+                        <option value="okay">Okay</option>
+                        <option value="ill">Ill</option>
+                    </select>
+                </div><br>
+
+
+            </div><br>
+            <div class="form-row">
+                <div class="col-md-8 mb-3">
+                    <label for="validationServer01">Ranger ID</label>
+                    <input type="number" class="form-control is-valid" id="validationServer01" placeholder="2" name="rangerId" required>
+                </div><br>
+
+
+            </div><br>
+
+            <button class="btn btn-primary" type="submit">Submit A Non-Endangered Animal</button>
+        </form>
+    </div>
+
+    <script type="javascript">
+        $(document).ready(function() {
+        $('.mdb-select').materialSelect();
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+{{/partial}}
+
+{{> layout.hbs}}
