@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="models.RangerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-02-14T14:04:25" hostname="moringa-Michael-Ochieng" time="0.398">
+  <properties/>
+  <testcase name="getSightings_retrievesAllSightingsOccurrences_sightingsList" classname="models.RangerTest" time="0.167"/>
+  <testcase name="equals_returnsTrueIfNameAndBadgeNumberAndEmailAreSame_true" classname="models.RangerTest" time="0.014"/>
+  <testcase name="getBadgeNumber_returnsCorrectBadgeNumber_1234" classname="models.RangerTest" time="0.013"/>
+  <testcase name="getName_returnsCorrectName_monty" classname="models.RangerTest" time="0.009"/>
+  <testcase name="getEmail_returnsCorrectEmail_jugeathotmail" classname="models.RangerTest" time="0.011"/>
+  <testcase name="getAnimals_retrievesAllAnimalsFromDatabase_animalsList" classname="models.RangerTest" time="0.053"/>
+  <testcase name="save_assignsIdToObject" classname="models.RangerTest" time="0.033"/>
+  <testcase name="ranger_instantiatesCorrectly_true" classname="models.RangerTest" time="0.011"/>
+  <testcase name="findRangerById_returnsCorrectRangerIfFindById_true" classname="models.RangerTest" time="0.035"/>
+  <testcase name="allRangers_returnsAllInstancesOfRangers_true" classname="models.RangerTest" time="0.043"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

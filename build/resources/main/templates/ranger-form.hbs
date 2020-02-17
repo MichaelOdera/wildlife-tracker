@@ -1,0 +1,37 @@
+{{#partial "content"}}
+
+
+<div id="ranger-form" class="container" id="form">
+    <form action="/rangers/new" method="post">
+        <div class="form-row">
+            <div class="col-md-8 mb-3">
+                <label for="validationServer01">Enter Full Names</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Collins Keens" name="name" required>
+            </div><br>
+
+
+        </div>
+        <div class="form-row">
+            <div class="col-md-8 mb-3">
+                <label for="validationServer03">BadgeNumber</label>
+                <input type="number" class="form-control is-invalid" id="validationServer03" name="badgeNumber" placeholder="12332" required>
+            </div><br>
+
+        </div>
+        <div class="form-row">
+            <div class="col-md-8 mb-3">
+                <label for="validationServer01">Email</label>
+                <input type="email" class="form-control is-valid" id="validationServer01" placeholder="First name" name="email" required>
+            </div><br>
+
+
+        </div><br>
+
+        <button class="btn btn-primary" type="submit">Submit Details</button>
+    </form>
+</div>
+
+
+{{/partial}}
+
+{{>layout.hbs}}

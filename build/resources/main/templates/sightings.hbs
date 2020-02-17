@@ -1,0 +1,24 @@
+{{#partial "content"}}
+    <div class="container-fluid sightings">
+        <div class="overlay">
+            {{#if allSightings}}
+                {{#each allSightings}}
+                    <div id="sightings" class="col-md-4">
+                        <h3>Animal Type: {{animalId}}</h3>
+                        <hr>
+                        <div>
+                            <p>Location Sighted: {{animalLocation}}</p>
+                            <p>Ranger's Id who Sighted: {{rangerId}} </p>
+                            <p>Time last-Seen: {{lastSeen}}</p>
+                        </div>
+
+                    </div>
+
+                {{/each}}
+            {{/if}}
+        </div>
+
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
