@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: models.SightingsTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.187 sec <<< FAILURE!
-equals_returnsTrueIfTheEntriesAreTheSame_true(models.SightingsTest)  Time elapsed: 0.007 sec  <<< ERROR!
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.157 sec <<< FAILURE!
+equals_returnsTrueIfTheEntriesAreTheSame_true(models.SightingsTest)  Time elapsed: 0.001 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -43,7 +43,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -51,7 +51,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getLocation_returnsCorrectlyLocationSpotted_town(models.SightingsTest)  Time elapsed: 0.002 sec  <<< ERROR!
+getLocation_returnsCorrectlyLocationSpotted_town(models.SightingsTest)  Time elapsed: 0.024 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -92,7 +92,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -100,7 +100,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_recordsTimeOfCreationInDatabase(models.SightingsTest)  Time elapsed: 0.097 sec  <<< ERROR!
+save_recordsTimeOfCreationInDatabase(models.SightingsTest)  Time elapsed: 0.047 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -141,7 +141,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -149,7 +149,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_returnCorrectIndividualSighting(models.SightingsTest)  Time elapsed: 0.026 sec  <<< ERROR!
+save_returnCorrectIndividualSighting(models.SightingsTest)  Time elapsed: 0.036 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -190,7 +190,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -198,7 +198,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_returnsAllInstancesOfSightings_true(models.SightingsTest)  Time elapsed: 0.015 sec  <<< ERROR!
+save_returnsAllInstancesOfSightings_true(models.SightingsTest)  Time elapsed: 0.016 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -239,7 +239,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -247,7 +247,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getAnimalId_returnsCorrectlyIdOfAnimal_1200(models.SightingsTest)  Time elapsed: 0.01 sec  <<< ERROR!
+getAnimalId_returnsCorrectlyIdOfAnimal_1200(models.SightingsTest)  Time elapsed: 0.005 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -288,7 +288,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -296,7 +296,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-instance_instantiatesCorrectly_true(models.SightingsTest)  Time elapsed: 0.005 sec  <<< ERROR!
+instance_instantiatesCorrectly_true(models.SightingsTest)  Time elapsed: 0.007 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -337,7 +337,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -345,7 +345,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getRangerId_returnsCorrectlyRangerId_12(models.SightingsTest)  Time elapsed: 0.01 sec  <<< ERROR!
+getRangerId_returnsCorrectlyRangerId_12(models.SightingsTest)  Time elapsed: 0.005 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -386,7 +386,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -435,7 +435,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)

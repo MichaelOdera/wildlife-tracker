@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="models.SightingsTest" time="0.185" errors="9" skipped="0">
+<testsuite tests="9" failures="0" name="models.SightingsTest" time="0.154" errors="9" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.6+10"/>
@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="models.SightingsTest" name="equals_returnsTrueIfTheEntriesAreTheSame_true" time="0.007">
+  <testcase classname="models.SightingsTest" name="equals_returnsTrueIfTheEntriesAreTheSame_true" time="0.001">
     <error message="Could not acquire a connection from DataSource - The connection attempt failed." type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -103,7 +103,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -111,11 +111,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -156,7 +156,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -195,7 +195,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -205,7 +205,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 
 </system-err>
   </testcase>
-  <testcase classname="models.SightingsTest" name="getLocation_returnsCorrectlyLocationSpotted_town" time="0.002">
+  <testcase classname="models.SightingsTest" name="getLocation_returnsCorrectlyLocationSpotted_town" time="0.024">
     <error message="Could not acquire a connection from DataSource - The connection attempt failed." type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -246,7 +246,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -254,11 +254,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -299,7 +299,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -338,7 +338,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -348,7 +348,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 
 </system-err>
   </testcase>
-  <testcase classname="models.SightingsTest" name="save_recordsTimeOfCreationInDatabase" time="0.097">
+  <testcase classname="models.SightingsTest" name="save_recordsTimeOfCreationInDatabase" time="0.047">
     <error message="Could not acquire a connection from DataSource - The connection attempt failed." type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -389,7 +389,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -397,11 +397,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -451,7 +451,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -499,7 +499,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -507,11 +507,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 43 more
 
-Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -552,7 +552,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -591,7 +591,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -601,7 +601,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 
 </system-err>
   </testcase>
-  <testcase classname="models.SightingsTest" name="save_returnCorrectIndividualSighting" time="0.026">
+  <testcase classname="models.SightingsTest" name="save_returnCorrectIndividualSighting" time="0.036">
     <error message="Could not acquire a connection from DataSource - The connection attempt failed." type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -642,7 +642,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -650,11 +650,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -704,7 +704,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -752,7 +752,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -760,11 +760,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 43 more
 
-Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -805,7 +805,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -844,7 +844,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -854,7 +854,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 
 </system-err>
   </testcase>
-  <testcase classname="models.SightingsTest" name="save_returnsAllInstancesOfSightings_true" time="0.015">
+  <testcase classname="models.SightingsTest" name="save_returnsAllInstancesOfSightings_true" time="0.016">
     <error message="Could not acquire a connection from DataSource - The connection attempt failed." type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -895,7 +895,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -903,11 +903,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -957,7 +957,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -1005,7 +1005,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1013,11 +1013,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 43 more
 
-Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1058,7 +1058,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -1097,7 +1097,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1107,7 +1107,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 
 </system-err>
   </testcase>
-  <testcase classname="models.SightingsTest" name="getAnimalId_returnsCorrectlyIdOfAnimal_1200" time="0.01">
+  <testcase classname="models.SightingsTest" name="getAnimalId_returnsCorrectlyIdOfAnimal_1200" time="0.005">
     <error message="Could not acquire a connection from DataSource - The connection attempt failed." type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -1148,7 +1148,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1156,11 +1156,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1201,7 +1201,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -1240,7 +1240,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1250,7 +1250,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 
 </system-err>
   </testcase>
-  <testcase classname="models.SightingsTest" name="instance_instantiatesCorrectly_true" time="0.005">
+  <testcase classname="models.SightingsTest" name="instance_instantiatesCorrectly_true" time="0.007">
     <error message="Could not acquire a connection from DataSource - The connection attempt failed." type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -1291,7 +1291,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1299,11 +1299,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1344,7 +1344,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -1383,7 +1383,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1393,7 +1393,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 
 </system-err>
   </testcase>
-  <testcase classname="models.SightingsTest" name="getRangerId_returnsCorrectlyRangerId_12" time="0.01">
+  <testcase classname="models.SightingsTest" name="getRangerId_returnsCorrectlyRangerId_12" time="0.005">
     <error message="Could not acquire a connection from DataSource - The connection attempt failed." type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -1434,7 +1434,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1442,11 +1442,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1487,7 +1487,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -1526,7 +1526,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1577,7 +1577,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 26 more
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1585,11 +1585,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 </error>
-    <system-err>Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+    <system-err>Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1639,7 +1639,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -1687,7 +1687,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1695,11 +1695,11 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 43 more
 
-Feb 17, 2020 3:06:34 PM org.postgresql.core.v3.ConnectionFactoryImpl log
+Feb 17, 2020 3:33:15 PM org.postgresql.core.v3.ConnectionFactoryImpl log
 WARNING: IOException occurred while connecting to 
-ec2-3-213-192-58.compute-1.amazonaws.com:5432
+ec2-184-72-235-159.compute-1.amazonaws.com:5432
 java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
@@ -1740,7 +1740,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Feb 17, 2020 3:06:34 PM org.postgresql.Driver connect
+Feb 17, 2020 3:33:15 PM org.postgresql.Driver connect
 SEVERE: Connection error: 
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:257)
@@ -1779,7 +1779,7 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: java.net.UnknownHostException: 
-ec2-3-213-192-58.compute-1.amazonaws.com
+ec2-184-72-235-159.compute-1.amazonaws.com
 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
 	at java.base/java.net.Socket.connect(Socket.java:609)
