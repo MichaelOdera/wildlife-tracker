@@ -1,0 +1,17 @@
+{{#partial "content"}}
+    <div class="row">
+        {{#if allNonEndangeredAnimals}}
+            {{#each allNonEndangeredAnimals}}
+                <div class="col-md-4" id="endangered">
+                    <h4>{{animalName}}</h4>
+                    <p>Age {{animalAge}}</p>
+                    <p>Health: {{animalHealth}}</p>
+                    <p>RangerID: {{rangerId}}</p>
+                </div>
+            {{/each}}
+        {{/if}}
+
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}

@@ -1,0 +1,148 @@
+*{
+    font-family: font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("https://i.pinimg.com/236x/26/a5/58/26a558c08b69b269167594f37c1073cb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+#second_ul{
+    text-align: center;
+    border: 1px solid white;
+
+}
+
+ul li{
+    border_bottom: 2px solid white;
+
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+select{
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+}
+
+#ranger-form{
+    margin-top: 4%;
+    text-align: center;
+}
+
+#success{
+    padding: 5%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-image: ;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url("https://i.pinimg.com/236x/46/d1/f6/46d1f6a134b3981e8b030decbc31a14f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#endangered{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 3%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sightings, .ranger_animals{
+    background-image: url("https://i.pinimg.com/236x/c6/85/e8/c685e87d75e3f51984335369495d2e36.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sightings > .overlay, .ranger_animals> .overlay{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     background-size: cover;
+}
+
+#sightings, #ranger_animals{
+    color: white;
+    padding: 2%;
+    border: 0.5px white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome{
+
+    color: white;
+    text-align: center;
+    padding: 4%;
+
+}
+
+img{
+    border-radius: 20px;
+    height: 60%;
+    width: 40%;
+
+}
+
+form{
+    padding: 5%;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.rangers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: grey;
+
+}
+
+.ranger-main-details{
+    color: white;
+
+}
+
+
+.ranger-more-details{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 2%;
+}
+
+#ranger{
+    border-radius: 25px;
+    border-bottom: 3px solid white;
+    margin: 2%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
