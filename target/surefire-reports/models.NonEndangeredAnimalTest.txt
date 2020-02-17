@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: models.NonEndangeredAnimalTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.116 sec <<< FAILURE!
-get_obtainTheProbabilityOfSurvival_3(models.NonEndangeredAnimalTest)  Time elapsed: 0.013 sec  <<< ERROR!
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.131 sec <<< FAILURE!
+get_obtainTheProbabilityOfSurvival_3(models.NonEndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -51,7 +51,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_returnsTrueIfSavesInDbCorrectly(models.NonEndangeredAnimalTest)  Time elapsed: 0.015 sec  <<< ERROR!
+save_returnsTrueIfSavesInDbCorrectly(models.NonEndangeredAnimalTest)  Time elapsed: 0.026 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -100,7 +100,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-animal_instantiatesCorrectlyAsAnimal_true(models.NonEndangeredAnimalTest)  Time elapsed: 0.005 sec  <<< ERROR!
+animal_instantiatesCorrectlyAsAnimal_true(models.NonEndangeredAnimalTest)  Time elapsed: 0.004 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -149,7 +149,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getAnimalAge_returnsAnimalAgeCorrectly_young(models.NonEndangeredAnimalTest)  Time elapsed: 0.007 sec  <<< ERROR!
+getAnimalAge_returnsAnimalAgeCorrectly_young(models.NonEndangeredAnimalTest)  Time elapsed: 0.004 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -198,7 +198,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getRangerId_returnsRangerIdCorrectly_12(models.NonEndangeredAnimalTest)  Time elapsed: 0.011 sec  <<< ERROR!
+getRangerId_returnsRangerIdCorrectly_12(models.NonEndangeredAnimalTest)  Time elapsed: 0.004 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -247,7 +247,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_assignsIdToAnimal(models.NonEndangeredAnimalTest)  Time elapsed: 0.01 sec  <<< ERROR!
+save_assignsIdToAnimal(models.NonEndangeredAnimalTest)  Time elapsed: 0.017 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -296,7 +296,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getAnimalName_returnsAnimalNameCorrectly_tiger(models.NonEndangeredAnimalTest)  Time elapsed: 0.006 sec  <<< ERROR!
+getAnimalName_returnsAnimalNameCorrectly_tiger(models.NonEndangeredAnimalTest)  Time elapsed: 0.009 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -345,7 +345,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-equals_returnsTrueIfNameAndAgeAndHealthAndRangerIdAreEqual_true(models.NonEndangeredAnimalTest)  Time elapsed: 0.008 sec  <<< ERROR!
+equals_returnsTrueIfNameAndAgeAndHealthAndRangerIdAreEqual_true(models.NonEndangeredAnimalTest)  Time elapsed: 0.003 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -394,7 +394,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-find_returnsAnimalWithSameId_secondAnimal(models.NonEndangeredAnimalTest)  Time elapsed: 0.019 sec  <<< ERROR!
+find_returnsAnimalWithSameId_secondAnimal(models.NonEndangeredAnimalTest)  Time elapsed: 0.01 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -443,7 +443,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getAnimalHealth_returnsAnimalHealthStatusCorrectly_okay(models.NonEndangeredAnimalTest)  Time elapsed: 0.005 sec  <<< ERROR!
+getAnimalHealth_returnsAnimalHealthStatusCorrectly_okay(models.NonEndangeredAnimalTest)  Time elapsed: 0.016 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -492,7 +492,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-all_returnsAllInstancesOfAnimal_true(models.NonEndangeredAnimalTest)  Time elapsed: 0.017 sec  <<< ERROR!
+all_returnsAllInstancesOfAnimal_true(models.NonEndangeredAnimalTest)  Time elapsed: 0.032 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: models.SightingsTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.156 sec <<< FAILURE!
-equals_returnsTrueIfTheEntriesAreTheSame_true(models.SightingsTest)  Time elapsed: 0.013 sec  <<< ERROR!
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.258 sec <<< FAILURE!
+equals_returnsTrueIfTheEntriesAreTheSame_true(models.SightingsTest)  Time elapsed: 0.015 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -51,7 +51,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getLocation_returnsCorrectlyLocationSpotted_town(models.SightingsTest)  Time elapsed: 0.031 sec  <<< ERROR!
+getLocation_returnsCorrectlyLocationSpotted_town(models.SightingsTest)  Time elapsed: 0.1 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -100,7 +100,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_recordsTimeOfCreationInDatabase(models.SightingsTest)  Time elapsed: 0.014 sec  <<< ERROR!
+save_recordsTimeOfCreationInDatabase(models.SightingsTest)  Time elapsed: 0.027 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -149,7 +149,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_returnCorrectIndividualSighting(models.SightingsTest)  Time elapsed: 0.02 sec  <<< ERROR!
+save_returnCorrectIndividualSighting(models.SightingsTest)  Time elapsed: 0.034 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -198,7 +198,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_returnsAllInstancesOfSightings_true(models.SightingsTest)  Time elapsed: 0.029 sec  <<< ERROR!
+save_returnsAllInstancesOfSightings_true(models.SightingsTest)  Time elapsed: 0.019 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -247,7 +247,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-getAnimalId_returnsCorrectlyIdOfAnimal_1200(models.SightingsTest)  Time elapsed: 0.009 sec  <<< ERROR!
+getAnimalId_returnsCorrectlyIdOfAnimal_1200(models.SightingsTest)  Time elapsed: 0.005 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -394,7 +394,7 @@ ec2-3-213-192-58.compute-1.amazonaws.com
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:156)
 	... 34 more
 
-save_correctlySavesInTheDatabase_true(models.SightingsTest)  Time elapsed: 0.021 sec  <<< ERROR!
+save_correctlySavesInTheDatabase_true(models.SightingsTest)  Time elapsed: 0.037 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)

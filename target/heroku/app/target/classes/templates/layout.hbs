@@ -1,0 +1,50 @@
+{{#block "header"}}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> {{#block "title"}} wildlife-tracker {{/block}} </title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='/app.css'>
+    </head>
+    <body>
+    <div class="navigation">
+        <ul class="nav nav-tabs text-center">
+            <li role="presentation" class="active"><h2 style="color: white;">WILDLIFE TRACKER</h2></li>
+            <li role="presentation"><a href="/" style="color: white;"><b>Welcome</b></a></li>
+            <li role="presentation"><a href="/rangers/list">All Rangers</a></li>
+            <li role="presentation"><a href="/rangers/form">Rangers Form</a></li>
+            <li role="presentation"><a href="/sightings/form">Sightings Form</a></li>
+            <li role="presentation"><a href="/sightings/list">All General Sightings</a></li>
+        </ul>
+        <ul class="nav" id="second_ul">
+            <h3 style="color: white;">Specific Sighting Section</h3>
+            <li role="presentation"><a href="/endangered/new">Endangered Animal Form</a></li>
+            <li role="presentation"><a href="/endangered/list">All Endangered Animals</a></li>
+            <li role="presentation"><a href="/non_endangered/form">Non-Endangered Animal Form</a></li>
+            <li role="presentation"><a href="/non_endangered/list">All Non-Endangered Animals</a></li>
+        </ul>
+    </div>
+
+{{/block}}
+<div class="container-fluid">
+
+    <div class="overlay">
+        <!--begin main template-->
+        {{#block "content"}}
+
+        {{/block}}
+    </div>
+
+</div>
+<!--end main template-->
+{{#block "footer"}}
+
+    </body>
+    postgresql-acute-04620
+    postgresql-elliptical-04113
+    </html>
+{{/block}}

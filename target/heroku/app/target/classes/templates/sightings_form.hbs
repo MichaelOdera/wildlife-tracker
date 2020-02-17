@@ -1,0 +1,48 @@
+{{#partial "content"}}
+    <div class="container">
+        <h3>Enter your General Sightings Here</h3>
+        <form action="/sightings/new" method="post" id="form">
+            <div class="form-row">
+                <div class="col-md-8 mb-3">
+                    <label for="validationServer01">Enter Animal ID</label>
+                    <select class="form-control mdb-select md-form"  name="animalId" id="" required>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="endangered">Endangered</option>
+                        <option value="nonendangered">Non-Endangered</option>
+                    </select>
+                </div><br>
+
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-8 mb-3">
+                    <label for="validationServer03">Animal Location</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer03" name="animalLocation" placeholder="City" required>
+                </div><br>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-8 mb-3">
+                    <label for="validationServer01">Ranger ID</label>
+                    <input type="number" class="form-control is-valid" id="validationServer01" placeholder="2" name="rangerId" required>
+                </div><br>
+
+
+            </div><br>
+
+            <button class="btn btn-primary" type="submit">Submit Sightings</button>
+        </form>
+    </div>
+
+    <script type="javascript">
+        $(document).ready(function() {
+        $('.mdb-select').materialSelect();
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+{{/partial}}
+
+{{> layout.hbs}}
