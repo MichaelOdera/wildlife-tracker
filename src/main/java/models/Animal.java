@@ -84,15 +84,24 @@ public abstract class Animal {
     }
 
     public String getAnimalHealthStatus() {
-        if(animalHealth.equals("healthy")){
-            animalHealth = BEST_HEALTH;
+        if(animalHealth.isEmpty()){
+            throw new UnsupportedOperationException("Your health entry cannot be empty");
         }
-        else if(animalHealth.equals("okay")){
-            animalHealth = MID_HEALTH;
+        try{
+            if(animalHealth.equals("healthy")){
+                animalHealth = BEST_HEALTH;
+            }
+            else if(animalHealth.equals("okay")){
+                animalHealth = MID_HEALTH;
+            }
+            else{
+                animalHealth = BAD_HEALTH;
+            }
+            return animalHealth;
+        }catch (UnsupportedOperationException emptyHealthEntry){
+            System.out.println(emptyHealthEntry);
         }
-        else{
-            animalHealth = BAD_HEALTH;
-        }
+
         return animalHealth;
     }
 
