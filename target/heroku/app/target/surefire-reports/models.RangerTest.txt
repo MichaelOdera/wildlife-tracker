@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+Test set: models.RangerTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in models.RangerTest
+getSightings_retrievesAllSightingsOccurrences_sightingsList(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+equals_returnsTrueIfNameAndBadgeNumberAndEmailAreSame_true(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+getBadgeNumber_returnsCorrectBadgeNumber_1234(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+getName_returnsCorrectName_monty(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+getEmail_returnsCorrectEmail_jugeathotmail(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+getAnimals_retrievesAllAnimalsFromDatabase_animalsList(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+save_assignsIdToObject(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+ranger_instantiatesCorrectly_true(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+findRangerById_returnsCorrectRangerIfFindById_true(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+allRangers_returnsAllInstancesOfRangers_true(models.RangerTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+

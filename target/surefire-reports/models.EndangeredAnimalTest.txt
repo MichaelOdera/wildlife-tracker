@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+Test set: models.EndangeredAnimalTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 1.168 sec <<< FAILURE! - in models.EndangeredAnimalTest
+save_returnsTrueIfSavesInDbCorrectly(models.EndangeredAnimalTest)  Time elapsed: 1.078 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+animal_instantiatesCorrectlyAsAnimal_true(models.EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+getAnimalAge_returnsAnimalAgeCorrectly_young(models.EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+getRangerId_returnsRangerIdCorrectly_12(models.EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+save_assignsIdToAnimal(models.EndangeredAnimalTest)  Time elapsed: 0.002 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+getAnimalName_returnsAnimalNameCorrectly_tiger(models.EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+equals_returnsTrueIfNameAndAgeAndHealthAndRangerIdAreEqual_true(models.EndangeredAnimalTest)  Time elapsed: 0.002 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+find_returnsAnimalWithSameId_secondAnimal(models.EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+getAnimalHealth_returnsAnimalHealthStatusCorrectly_okay(models.EndangeredAnimalTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+
+all_returnsAllInstancesOfAnimal_true(models.EndangeredAnimalTest)  Time elapsed: 0.002 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+Caused by: java.net.UnknownHostException: 
+
+ec2-184-72-235-159.compute-1.amazonaws.com
+

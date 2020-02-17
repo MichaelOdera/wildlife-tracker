@@ -1,0 +1,25 @@
+{{#partial "content"}}
+
+    <h2 style="color: white;">Here goes your list of All Animals</h2>
+
+    <div class="ranger_animals container-fluid">
+        <div class="overlay">
+            {{#if allAnimals}}
+                {{#each allAnimals}}
+                    <div id="ranger_animals" class="col-md-3" style="color: white;">
+                        <h3>Name: {{animalName}}</h3>
+                        <hr>
+                        <h4>Health: {{animalHealth}}</h4>
+                        <h4>Age: {{animalAge}}</h4>
+                        <h4>rangerId: {{rangerId}}</h4>
+                    </div>
+
+                {{/each}}
+            {{else}}
+                <p style="color: white;">This Ranger has entered no Animals yet</p>
+            {{/if}}
+        </div>
+    </div>
+{{/partial}}
+
+{{>layout.hbs}}
