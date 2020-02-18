@@ -2,6 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="com.wildlifetracker-wildlifetracker_main" target="1.8" />
+      <module name="com.wildlifetracker-wildlifetracker_test" target="1.8" />
+      <module name="com.wildlifetracker.wildlifetracker.main" target="1.8" />
+      <module name="com.wildlifetracker.wildlifetracker.test" target="1.8" />
       <module name="wildlifetracker.main" target="1.8" />
       <module name="wildlifetracker.test" target="1.8" />
       <module name="wildlifetracker_main" target="1.8" />

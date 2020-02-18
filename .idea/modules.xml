@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.wildlifetracker-wildlifetracker_main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.wildlifetracker-wildlifetracker_main.iml" group="wildlifetracker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.wildlifetracker-wildlifetracker_test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.wildlifetracker-wildlifetracker_test.iml" group="wildlifetracker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.wildlifetracker.wildlifetracker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.wildlifetracker.wildlifetracker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.wildlifetracker.wildlifetracker.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.wildlifetracker.wildlifetracker.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/wildlifetracker.iml" filepath="$PROJECT_DIR$/.idea/modules/wildlifetracker.iml" group="wildlifetracker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wildlifetracker.iml" filepath="$PROJECT_DIR$/.idea/modules/wildlifetracker.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/wildlifetracker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/wildlifetracker.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/wildlifetracker.test.iml" filepath="$PROJECT_DIR$/.idea/modules/wildlifetracker.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/wildlifetracker_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wildlifetracker_main.iml" group="wildlifetracker" />
