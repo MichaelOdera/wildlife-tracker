@@ -62,6 +62,14 @@ Run `netstat -pliten |grep java` to check for ports that are being used by java 
 
 Run `gradle build` to build the project. The `build.gradle` file is important for any of the required process dependencies to function properly.
 
+
+## PSQL
+You can create your various tables using `In PSQL:
+                                          CREATE DATABASE wildlife_tracker;
+                                          CREATE TABLE rangers (id serial PRIMARY KEY, rangerName varchar, badgeNumber varchar, email varachar);
+                                          CREATE TABLE animals (id serial PRIMARY KEY, animalName varchar, animalAge varchar, animalHealth varchar, rangerId int, type varchar);
+                                          CREATE TABLE sightings(id serial PRIMARY KEY, animalLocation varchar, rangerId int);
+                                          CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;`
 ## Running unit tests
 
 Run `run test` to execute the unit tests on your local directory after git cloning or downloading.
